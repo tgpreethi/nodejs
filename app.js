@@ -53,12 +53,13 @@ var db_user = "cmpe281" ;
 var db_pwd  = "cmpe281" ;
 var db_name = "test" ;
 */
+//mongodb://cmpe281:cmpe281@ds151293.mlab.com:51293/heroku_sdr9qg2g
 
-var db_host = (process.env.mongodb_host || "midterm-test-cloud9.c9.io" ) ;
-var db_port = (process.env.mongodb_port || "27017" ) ;
+var db_host = (process.env.mongodb_host || "ds151293.mlab.com" ) ;
+var db_port = (process.env.mongodb_port || "51293" ) ;
 var db_user = (process.env.mongodb_user || "cmpe281" ) ;
 var db_pwd  = (process.env.mongodb_pwd  || "cmpe281" ) ;
-var db_name = (process.env.mongodb_name || "test" ) ;
+var db_name = (process.env.mongodb_name || "heroku_sdr9qg2g" ) ;
    
 
 var db = new DB(db_name,
